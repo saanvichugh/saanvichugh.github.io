@@ -12,7 +12,7 @@
     }
 
     body {
-      background-color: #001f4d; /* navy blue */
+      background-color: #99ccff; /* light blue margins */
       font-family: Cambria, Georgia, serif;
       display: flex;
       justify-content: center; /* center container horizontally */
@@ -22,12 +22,13 @@
       color: #fff;
     }
 
-    /* Container with light blue sides */
+    /* Center content container in navy */
     .content-container {
-      background-color: #99ccff; /* light blue */
-      padding: 0 3in;           /* 3 inches left and right on large screens */
+      background-color: #001f4d; /* navy blue center */
       width: 100%;
-      max-width: 1200px;        /* optional: limit width for large screens */
+      max-width: 800px;          /* controls width of center column */
+      padding: 0 30px;           /* padding inside the navy column */
+      box-sizing: border-box;
     }
 
     /* Profile photo in a circle */
@@ -45,22 +46,19 @@
     h1 {
       font-size: 2.5rem;
       margin-bottom: 5px;
-      color: #000; /* darker text on light blue background */
     }
 
     /* Subtitle under name */
     .subtitle {
       font-size: 1.2rem;
       margin-bottom: 20px;
-      color: #000; /* slightly darker */
+      color: #ddd; /* lighter on navy */
     }
 
     /* About Me section */
     .about-section {
       margin-top: 10px;   /* tight space above About Me */
-      max-width: 600px;
       margin-bottom: 60px; /* space below About Me for links */
-      color: #000;         /* dark text */
     }
 
     .about-section h2 {
@@ -71,22 +69,22 @@
     .about-section .small-text {
       font-size: 1rem;
       margin-top: 20px;
-      color: #000;
+      color: #ddd;
     }
 
     /* Links section */
     .links-section {
-      max-width: 600px;
+      margin-bottom: 40px;
     }
 
     .links-section a {
-      color: #0066cc;           /* slightly darker blue for links */
+      color: #66ccff;           /* light blue links on navy */
       text-decoration: underline;
       font-size: 1rem;
     }
 
     .links-section a:hover {
-      color: #3399ff;           /* lighter on hover */
+      color: #99ddff;           /* slightly lighter on hover */
     }
 
     .links-section p {
