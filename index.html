@@ -16,20 +16,23 @@
       font-family: Cambria, Georgia, serif;
       display: flex;
       justify-content: center; /* center navy column */
-      padding-top: 50px;       /* top padding */
       text-align: center;
       min-height: 100vh;
       color: #fff;
     }
 
-    /* Center content container with fixed width */
+    /* Center content container */
     .content-container {
       background-color: #001f4d; /* navy blue */
-      width: 60%;                /* center column width ~matches 3in margins on large screens */
-      max-width: 800px;          /* prevents too wide on large monitors */
-      min-width: 300px;          /* keeps it readable on smaller screens */
-      padding: 0 30px;           /* internal padding inside navy column */
+      width: 75%;                /* wider center column */
+      max-width: 1000px;         /* optional max width */
+      min-width: 300px;          /* readable on small screens */
+      padding: 30px 40px;        /* internal padding */
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* align content to top */
     }
 
     /* Profile photo in a circle */
@@ -40,7 +43,7 @@
       background-size: cover;   /* photo fills circle */
       background-position: center;
       border: 4px solid #fff;
-      margin: 0 auto 20px auto;
+      margin-bottom: 20px;
     }
 
     /* Name styling */
@@ -58,8 +61,9 @@
 
     /* About Me section */
     .about-section {
-      margin-top: 10px;    /* tight space above About Me */
-      margin-bottom: 60px; /* space below About Me for links */
+      margin-top: 10px;    
+      margin-bottom: 60px; 
+      max-width: 600px;
     }
 
     .about-section h2 {
@@ -79,24 +83,24 @@
     }
 
     .links-section a {
-      color: #66ccff;           /* light blue links */
+      color: #66ccff;           
       text-decoration: underline;
       font-size: 1rem;
     }
 
     .links-section a:hover {
-      color: #99ddff;           /* slightly lighter on hover */
+      color: #99ddff;           
     }
 
     .links-section p {
-      margin-bottom: 10px;      /* space between links */
+      margin-bottom: 10px;      
     }
 
     /* Responsive tweaks for smaller screens */
     @media (max-width: 800px) {
       .content-container {
-        width: 90%;             /* take up more width on smaller screens */
-        padding: 0 20px;
+        width: 90%;             /* wider on smaller screens */
+        padding: 20px;          /* reduce padding */
       }
     }
 
