@@ -15,19 +15,20 @@
       background-color: #99ccff; /* light blue margins */
       font-family: Cambria, Georgia, serif;
       display: flex;
-      justify-content: center; /* center container horizontally */
+      justify-content: center; /* center navy column */
       padding-top: 50px;       /* top padding */
       text-align: center;
       min-height: 100vh;
       color: #fff;
     }
 
-    /* Center content container in navy */
+    /* Center content container with fixed width */
     .content-container {
-      background-color: #001f4d; /* navy blue center */
-      width: 100%;
-      max-width: 800px;          /* controls width of center column */
-      padding: 0 30px;           /* padding inside the navy column */
+      background-color: #001f4d; /* navy blue */
+      width: 60%;                /* center column width ~matches 3in margins on large screens */
+      max-width: 800px;          /* prevents too wide on large monitors */
+      min-width: 300px;          /* keeps it readable on smaller screens */
+      padding: 0 30px;           /* internal padding inside navy column */
       box-sizing: border-box;
     }
 
@@ -52,12 +53,12 @@
     .subtitle {
       font-size: 1.2rem;
       margin-bottom: 20px;
-      color: #ddd; /* lighter on navy */
+      color: #ddd; /* lighter text on navy */
     }
 
     /* About Me section */
     .about-section {
-      margin-top: 10px;   /* tight space above About Me */
+      margin-top: 10px;    /* tight space above About Me */
       margin-bottom: 60px; /* space below About Me for links */
     }
 
@@ -78,7 +79,7 @@
     }
 
     .links-section a {
-      color: #66ccff;           /* light blue links on navy */
+      color: #66ccff;           /* light blue links */
       text-decoration: underline;
       font-size: 1rem;
     }
@@ -94,9 +95,11 @@
     /* Responsive tweaks for smaller screens */
     @media (max-width: 800px) {
       .content-container {
-        padding: 0 20px;       /* smaller side padding on mobile */
+        width: 90%;             /* take up more width on smaller screens */
+        padding: 0 20px;
       }
     }
+
   </style>
 </head>
 <body>
